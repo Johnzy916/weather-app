@@ -54,3 +54,11 @@ button {
     color: white;
     padding: 8px;
 }
+
+.weather-details p {
+    margin: 0 0 8px 0;
+}
+
+hr {
+    border-top: #cccccc;
+}
