@@ -39,7 +39,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        message: 'This is basically a message that helps you know what to do.',
+        message: `Put in a location and search it. That's all there is to it.`,
         name: 'Jhonathan Angus'
     })
 })
