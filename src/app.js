@@ -55,7 +55,7 @@ app.get('/weather', (req, res) => {
         if (error) {
             return res.send({ error })
         }
-        forecast(lat, long, (forecastError, { overview, temperature } = {}) => {
+        forecast(lat, long, (forecastError, { temperature, precipProbability, dailySummary, temperatureHigh, temperatureLow } = {}) => {
             if (error) {
                 return res.send({ error: forecastError })
             }
@@ -63,7 +63,10 @@ app.get('/weather', (req, res) => {
                 address: req.query.address,
                 location,
                 temperature,
-                overview
+                precipProbability,
+                dailySummary,
+                temperatureHigh,
+                temperatureLow
             })
         })
     });

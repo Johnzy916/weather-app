@@ -20,8 +20,7 @@ const forecast = (lat, long, callback) => {
                 precipProbability,
                 dailySummary,
                 temperatureHigh,
-                temperatureLow,
-                overview: `${dailySummary} It's currently ${temperature.toFixed(0)}\xB0 out with a high of ${temperatureHigh.toFixed(0)}\xB0 and a low of ${temperatureLow.toFixed(0)}\xB0. There is a ${precipProbability * 100}% chance of rain.`
+                temperatureLow
             })
         }
     })
